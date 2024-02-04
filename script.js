@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <sup>°C</sup>
                 </div>
                 <figure>
-                    <img class="city-icon" src="${(image)}">
+                    <img class="city-icon smaller-image" src="${(image)}">
                     <figcaption>${current_weather}</figcaption>
                 </figure>
                 `;
