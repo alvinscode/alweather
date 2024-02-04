@@ -13,12 +13,41 @@ document.addEventListener("DOMContentLoaded", function() {
                 "X-RapidAPI-Key": apiKey
             }
         })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data)
-            })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            const responseData = data.data;
+            const { expected_temp, city, current_weather, humidity, bg_image, temp } = responseData;
+            const image = bg_image;
+        
+            const list = document.querySelector(".cities");
+            const msg = document.querySelector(".msg");
+        
+            const li = document.createElement("li");
+            li.classList.add("city");
+            const markup = `
+                <h2 class="city-name" data-name="${city}">
+                    <span>${city}</span>
+                </h2>
+                <div class="city-temp">${Math.round(temp)}
+                    <sup>°C</sup>
+                </div>
+                <figure>
+                    <img class="city-icon" src="${(image)}">
+                    <figcaption>${current_weather}</figcaption>
+                </figure>
+                `;
+            li.innerHTML = markup;
+            list.appendChild(li);
+        })
         .catch(() => {
+            const msg = document.querySelector(".msg");
             msg.textContent = "Please search for a valid city.";
         });
-})
+
+    msg.textContent = "";
+    form.reset();
+    input.focus();
+    });
+    
 });
