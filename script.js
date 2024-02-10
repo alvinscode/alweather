@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch(url)
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             const { name, main, weather } = data;
             const tempKelvin = main.temp;
             const tempFahrenheit = (tempKelvin - 273.15) * 9/5 + 32
@@ -23,14 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
             const li = document.createElement("li");
             li.classList.add("city");
             const markup = `
-                <h2 class="city-name" data-name="${name}">
+                <h2 data-name="${name}">
                     <span>${name}</span>
                 </h2>
-                <div class="city-temp">${Math.round(tempFahrenheit)}
+                <div>${Math.round(tempFahrenheit)}
                     <sup>°F</sup>
                 </div>
                 <figure>
-                    <img class="city-icon smaller-image" src="http://openweathermap.org/img/wn/${icon}.png">
+                    <img src="http://openweathermap.org/img/wn/${icon}.png">
                     <figcaption>${currentWeather}</figcaption>
                 </figure>
                 `;
