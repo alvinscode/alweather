@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <h2 data-name="${name}">
                     <span>${name}</span>
                 </h2>
-                <div>${Math.round(tempFahrenheit)}
+                <div class-name="city">${Math.round(tempFahrenheit)}
                     <sup>°F</sup>
                 </div>
                 <figure>
