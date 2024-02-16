@@ -7,9 +7,7 @@
 }
 
 body {
-  background-image: url('images/bg.jpg');
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(0, 81, 255);
 }
 
 .container {
@@ -67,7 +65,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('images/card.jpg');
+  background-image: url('images/bg.jpg');
   background-size: cover;
   background-position: center;
   color: black;
