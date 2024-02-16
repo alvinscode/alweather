@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
             const li = document.createElement("li");
             li.classList.add("city");
-            const markup = `
+            const card = `
                 <h2 data-name="${name}">
                     <span>${name}</span>
                 </h2>
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <figcaption>${currentWeather}</figcaption>
                 </figure>
                 `;
-            li.innerHTML = markup;
+            li.innerHTML = card;
             list.appendChild(li);
         })
         .catch(() => {
