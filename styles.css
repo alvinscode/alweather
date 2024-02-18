@@ -18,7 +18,7 @@
   animation: textclip 2s linear infinite;
   display: inline-block;
       font-size: 100px;
-  font-family: 'Segoe UI';
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @keyframes textclip {
@@ -31,6 +31,7 @@ body {
   background-image: linear-gradient(aqua, darkblue);
   background-repeat: no-repeat;
   min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -96,9 +97,4 @@ body {
 
 .city:last-child {
   margin-right: 0;
-}
-
-.city h2,
-.city p {
-    font-family: "Arial", sans-serif;
 }
