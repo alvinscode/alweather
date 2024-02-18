@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <sup>°F</sup>
                 </div>
                 <figure>
-                    <img src="http://openweathermap.org/img/wn/${icon}.png">
+                    <img src="https://openweathermap.org/img/wn/${icon}.png">
                     <figcaption>${currentWeather}</figcaption>
                 </figure>
                 `;
