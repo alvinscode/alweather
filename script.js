@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", e => {
         e.preventDefault();
         const inputVal = input.value;
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${window.apiKey}`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&appid=${window.apiKey}`;
 
         fetch(url)
         .then(response => response.json())
