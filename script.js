@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
             list.appendChild(li);
         })
         .catch(() => {
-            msg.textContent = "Please search for a valid city or state.";
+            msg.innerHTML = "<p>Please search for a valid city or state.</p>";
         });
 
         msg.textContent = "";

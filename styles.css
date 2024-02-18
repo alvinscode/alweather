@@ -98,3 +98,17 @@ body {
 .city:last-child {
   margin-right: 0;
 }
+
+.msg {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 10;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 150px;
+}
